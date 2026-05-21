@@ -1,0 +1,42 @@
+<div class="login-page">
+    <div class="login-container">
+
+        <div class="logo-container">
+            <img src="/app/assets/img/sea-7415664_640.jpg" class="logo" alt="E Commerce Logo">
+
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Please sign in to continue</p>
+        </div>
+
+        <form name="loginForm" ng-submit="login(loginForm)" novalidate>
+
+            <div class="error" ng-if="error">{{error}}</div>
+            <div class="success" ng-if="success">{{success}}</div>
+
+            <div class="input-group">
+                <input type="tel" name="phone" ng-model="user.phone" placeholder="Phone Number" required>
+
+                <p class="validation" ng-if="loginForm.$submitted && loginForm.phone.$error.required">
+                    Phone number is required
+                </p>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="password" ng-model="user.password" placeholder="Password" required>
+
+                <p class="validation" ng-if="loginForm.$submitted && loginForm.password.$error.required">
+                    Password is required
+                </p>
+            </div>
+
+            <button type="submit" class="login-btn">
+                Sign In
+            </button>
+            <p class="subtitle">
+                Please sign in to continue. Don't have an account?
+                <a href="#!/register">Sign up</a>
+            </p>
+
+        </form>
+    </div>
+</div>

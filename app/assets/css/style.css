@@ -94,28 +94,43 @@
     color: green;
     margin-bottom: 15px;
 }
+
 .validation {
-	color: red;
-	font-size: 15px;
-	margin-top: -5px;
-	margin-bottom: 12px;
-	text-align: left;
-	margin-left: 15px;
-}
-.register-container{
-    width:100%;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
+    color: red;
+    font-size: 15px;
+    margin-top: -5px;
+    margin-bottom: 12px;
+    text-align: left;
+    margin-left: 15px;
 }
 
-.register-card{
-    width:100%;
-    max-width:400px;
-    background:#fff;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+.register-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .body {
+        padding: 10px;
+    }
+
 }

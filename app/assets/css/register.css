@@ -79,3 +79,18 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+     .register-card {
+        width: 90%;
+        padding: 30px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+     .register-card {
+        width: 90%;
+        padding: 30px 25px;
+    }
+
+}

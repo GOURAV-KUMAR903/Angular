@@ -1,31 +1,39 @@
-
-
-.register-page {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.register-container {
+/* Page */
+.register-page {
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background: #fff;
 }
 
+/* Container */
+.register-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
 .register-card {
-	width: 100vh;
-	max-width: 400px;
-	background: #fff;
-	padding: 35px;
-	border-radius: 15px;
-	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo Section */
 .logo-section {
     text-align: center;
     margin-bottom: 25px;
@@ -33,15 +41,16 @@
 
 .logo {
     width: 90px;
-    height: 90px;
+    max-width: 100%;
+    height: auto;
     border-radius: 20%;
     object-fit: cover;
-    /* margin-bottom: 15px; */
 }
 
 .logo-section h2 {
     margin-bottom: 8px;
     color: #222;
+    font-size: 24px;
 }
 
 .logo-section p {
@@ -49,8 +58,24 @@
     font-size: 14px;
 }
 
+/* Inputs */
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
 
+.input-group input:focus {
+    border-color: #4c7cf3;
+    box-shadow: 0 0 0 3px rgba(76, 124, 243, 0.2);
+}
 
+/* Button */
 .register-btn {
     width: 100%;
     padding: 14px;
@@ -67,6 +92,7 @@
     background: #365fd9;
 }
 
+/* Bottom Text */
 .bottom-text {
     margin-top: 18px;
     text-align: center;
@@ -80,17 +106,63 @@
     font-weight: bold;
 }
 
+/* Tablet */
 @media screen and (max-width: 768px) {
-     .register-card {
-        width: 90%;
+
+    .register-card {
+        max-width: 90%;
         padding: 30px 25px;
+    }
+
+    .logo-section h2 {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .register-btn {
+        font-size: 15px;
     }
 }
 
+/* Mobile */
 @media screen and (max-width: 480px) {
-     .register-card {
-        width: 90%;
-        padding: 30px 25px;
+
+    .register-page {
+        padding: 15px;
     }
 
+    .register-card {
+        max-width: 100%;
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .logo {
+        width: 75px;
+    }
+
+    .logo-section h2 {
+        font-size: 20px;
+    }
+
+    .logo-section p {
+        font-size: 13px;
+    }
+
+    .input-group input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .register-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .bottom-text {
+        font-size: 13px;
+    }
 }

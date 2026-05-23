@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 40px;
+    background:linear-gradient(135deg,#0f0f0f,#2a0b0b);
+    position:relative;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* LOGO */
+.logo img {
+	width: 135px;
+	filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+	margin-top: 24px;
+}
+
+/* DESKTOP MENU */
+.navbar ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+    align-items:center;
+}
+
+.navbar ul li a{
+    color:#fff;
+    text-decoration:none;
+    padding:10px 14px;
+    border-radius:10px;
+    transition:0.3s;
+    position:relative;
+    font-family:'Pacifico', cursive;
+}
+
+/* HOVER GLOW EFFECT */
+.navbar ul li a:hover{
+    background:rgba(255,255,255,0.08);
+    box-shadow:0 0 10px rgba(255,255,255,0.2);
+    transform:translateY(-2px);
+}
+
+/* BUTTONS */
+.btn.login{
+    background:linear-gradient(45deg,#ff3b3bb3,#2a0b0b);
+    color:#fff !important;
+    box-shadow:0 0 10px rgba(255,0,0,0.3);
+}
+
+.btn.register{
+    background:linear-gradient(45deg,#ff3b3bb3,#2a0b0b);
+    color:#fff !important;
+    box-shadow:0 0 10px rgba(255,0,0,0.3);
+}
+
+/* HAMBURGER */
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:#fff;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.menu-toggle:hover{
+    transform:rotate(90deg);
+}
+
+/* ======================
+   MOBILE MODERN POPUP
+====================== */
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+        z-index:1001;
+    }
+
+    .navbar ul{
+        position:absolute;
+        top:70px;
+        right:20px;
+        width:240px;
+
+        background:rgba(20,20,20,0.7);
+        backdrop-filter:blur(15px);
+        border:1px solid rgba(255,255,255,0.1);
+        border-radius:16px;
+
+        flex-direction:column;
+        padding:15px;
+        gap:12px;
+
+        /* hidden */
+        opacity:0;
+        transform:translateY(-25px) scale(0.95);
+        pointer-events:none;
+
+        transition:0.35s ease;
+    }
+
+    .navbar ul.active{
+        opacity:1;
+        transform:translateY(0) scale(1);
+        pointer-events:auto;
+    }
+
+    .navbar ul li a{
+        display:block;
+        padding:12px;
+        border-radius:10px;
+    }
+
+    .navbar ul li a:hover{
+        background:rgba(255,255,255,0.12);
+        padding-left:18px;
+    }
+}

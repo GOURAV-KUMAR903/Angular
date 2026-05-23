@@ -1,43 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.login-page,
-.register-container {
-    width: 100%;
-    min-height: 100vh;
+.login-page {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     background: #fff;
 }
 
-/* Login Card */
 .login-container {
-    width: 100%;
-    max-width: 380px;
+    width: 380px;
     padding: 40px 35px;
     border-radius: 18px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
     text-align: center;
-
     background: #304352;
+    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
+    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #d7d2cc, #304352);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-/* Logo */
 .logo-container {
     margin-bottom: 25px;
 }
 
 .logo {
-    width: 100px;
-    max-width: 100%;
-    height: auto;
+    width: 110px;
+    height: 90px;
     object-fit: contain;
     margin-bottom: 10px;
 }
@@ -52,20 +42,17 @@
 .subtitle {
     font-size: 13px;
     color: #fff;
-    margin-top: 10px;
 }
 
-/* Inputs */
 .input-group input {
-    width: 100%;
-    padding: 15px 14px;
+    width: 92%;
+    padding: 17px 14px;
     margin-bottom: 15px;
     border-radius: 12px;
     border: 1px solid #ddd;
     outline: none;
     background: #f7f7f7;
     transition: 0.2s;
-    font-size: 15px;
 }
 
 .input-group input:focus {
@@ -74,7 +61,6 @@
     box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
 }
 
-/* Button */
 .login-btn {
     width: 100%;
     padding: 13px;
@@ -85,10 +71,13 @@
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
-
     background: #808080;
+    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3fada8, #808080);
+    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3fada8, #808080);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .login-btn:hover {
@@ -96,7 +85,6 @@
     color: #314755;
 }
 
-/* Messages */
 .error {
     color: red;
     margin-bottom: 15px;
@@ -106,83 +94,28 @@
     color: green;
     margin-bottom: 15px;
 }
-
 .validation {
-    color: red;
-    font-size: 14px;
-    margin-top: -5px;
-    margin-bottom: 12px;
-    text-align: left;
-    margin-left: 5px;
+	color: red;
+	font-size: 15px;
+	margin-top: -5px;
+	margin-bottom: 12px;
+	text-align: left;
+	margin-left: 15px;
+}
+.register-container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
 
-/* Register Card */
-/* .register-card {
-    width: 100%;
-    max-width: 400px;
-    background: #fff;
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-} */
-
-/* Tablet */
-@media screen and (max-width: 768px) {
-
-    .login-container,
-    .register-card {
-        max-width: 90%;
-        padding: 30px 25px;
-    }
-
-    .logo-container h2 {
-        font-size: 20px;
-    }
-
-    .input-group input {
-        padding: 14px;
-        font-size: 14px;
-    }
-
-    .login-btn {
-        font-size: 14px;
-    }
-}
-
-/* Mobile */
-@media screen and (max-width: 480px) {
-
-    .login-container,
-    .register-card {
-        max-width: 100%;
-        padding: 25px 20px;
-        border-radius: 12px;
-    }
-
-    .logo {
-        width: 80px;
-    }
-
-    .logo-container h2 {
-        font-size: 18px;
-    }
-
-    .subtitle {
-        font-size: 12px;
-        margin-top: 10px;
-    }
-
-    .input-group input {
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .login-btn {
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .validation {
-        font-size: 13px;
-    }
+.register-card{
+    width:100%;
+    max-width:400px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
 }

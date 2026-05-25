@@ -13,13 +13,7 @@ html,body{
     background-size: cover;
     background-position: center;
 }
-.login-page {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-}
+
 
 .login-container {
     width: 380px;

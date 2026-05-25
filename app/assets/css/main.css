@@ -365,10 +365,8 @@ body {
     .ship-box {
         width: 100%;
         height: 320px;
+        margin-right: 40px; /* REMOVE EXTRA SPACE */
 
-        margin-right: 0; /* REMOVE EXTRA SPACE */
-
-        border-radius: 18px;
     }
 
     .ship-box h3 {
@@ -379,11 +377,9 @@ body {
 
     /* CONTENT BOX */
     .ship-box-content {
-        width: 100%;
+        width: 89%;
         min-height: auto;
-
         padding: 22px;
-
         border-radius: 18px;
     }
 

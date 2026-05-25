@@ -2,12 +2,12 @@
    GLOBAL
 ========================= */
 
-/* body {
+body {
     margin: 0;
     font-family: 'Trebuchet MS', sans-serif;
     background: #0d1117;
     color: white;
-} */
+}
 
 .page-wrapper {
     overflow-x: hidden;

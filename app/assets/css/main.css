@@ -323,9 +323,15 @@ body {
    RESPONSIVE
 ========================= */
 
+/* =========================
+   TABLET
+========================= */
+
 @media(max-width: 1200px) {
+
     .ships-container {
         flex-direction: column;
+        gap: 35px;
     }
 
     .ship-box,
@@ -335,34 +341,89 @@ body {
     }
 }
 
+
+/* =========================
+   MOBILE VIEW
+========================= */
+
 @media(max-width: 768px) {
 
     .ships-section {
-        padding: 80px 20px;
+        padding: 60px 15px;
     }
 
     .section-title {
-        font-size: 38px;
+        font-size: 32px;
+        margin-bottom: 40px;
     }
 
+    .ships-container {
+        gap: 25px;
+    }
+
+    /* IMAGE BOX */
     .ship-box {
-        height: 500px;
+        width: 100%;
+        height: 320px;
+
+        margin-right: 0; /* REMOVE EXTRA SPACE */
+
+        border-radius: 18px;
     }
 
     .ship-box h3 {
-        font-size: 30px;
+        font-size: 24px;
+        left: 20px;
+        bottom: 20px;
     }
 
+    /* CONTENT BOX */
     .ship-box-content {
-        padding: 30px;
+        width: 100%;
+        min-height: auto;
+
+        padding: 22px;
+
+        border-radius: 18px;
     }
 
     .ship-box-content h3 {
-        font-size: 30px;
+        font-size: 26px;
+        margin-bottom: 15px;
     }
 
     .ship-box-content p {
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 16px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width: 480px){
+
+    .section-title{
+        font-size: 26px;
+    }
+
+    .ship-box{
+        height: 260px;
+    }
+
+    .ship-box h3{
+        font-size: 20px;
+    }
+
+    .ship-box-content h3{
+        font-size: 22px;
+    }
+
+    .ship-box-content p{
+        font-size: 13px;
     }
 }
 

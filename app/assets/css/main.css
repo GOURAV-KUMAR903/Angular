@@ -2,7 +2,12 @@
    GLOBAL
 ========================= */
 
-
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: #0d1117;
+    color: white;
+}
 
 .page-wrapper {
     overflow-x: hidden;
@@ -22,7 +27,7 @@
 ========================= */
 
 .hero-section {
-    height: 80vh;
+    height: 100vh;
     background:
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url('../img/wp2841113-pirates-hd-wallpapers.jpg');
@@ -270,8 +275,8 @@
 ========================= */
 
 .ship-box-content {
-    width: 650px;
-    min-height: 600px;
+    width: 550px;
+    min-height: 650px;
     padding: 45px;
     border-radius: 25px;
     background: rgba(15, 23, 42, 0.95);
@@ -470,7 +475,6 @@
     background:linear-gradient(135deg,#0f0f0f,#2a0b0b);
     text-align: center;
     font-family: 'Garamond', cursive;
-    color: #d4af37;
 }
 
 /* =========================

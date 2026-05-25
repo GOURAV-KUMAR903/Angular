@@ -271,7 +271,7 @@
 
 .ship-box-content {
     width: 650px;
-    min-height: 650px;
+    min-height: 600px;
     padding: 45px;
     border-radius: 25px;
     background: rgba(15, 23, 42, 0.95);

@@ -35,17 +35,14 @@ html,body{
 }
 
 .login-container-logo {
-    width: 110px;
-    height: 90px;
-    object-fit: contain;
-    margin-bottom: 10px;
+    width: 200px;
+    height: 80px;
+  
 }
 
 .logo-container h2 {
-    font-size: 22px;
     color: #222;
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-weight: 400;
 }
 
 .subtitle {
@@ -82,9 +79,9 @@ html,body{
     transition: 0.3s;
     background: #808080;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3fada8, #808080);
+    background: -webkit-linear-gradient(to right, #e9d205ef, #808080);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3fada8, #808080);
+    background: linear-gradient(to right, #f7f7f7, #7a7777);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }

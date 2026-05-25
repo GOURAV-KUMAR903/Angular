@@ -1,11 +1,109 @@
 <div class="page-wrapper">
 
+    <!-- Header -->
     <div ng-include="'/app/components/Site/header/header.html'"></div>
 
-    <div class="content">
-        <h1>Home Page</h1>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <h1>Pirates Of Caribbean</h1>
+            <p>
+                Sail through dangerous oceans, discover hidden treasures,
+                and become the king of the seas.
+            </p>
+            <div class="hero-btns">
+                <button class="btn-primary">Explore Sea</button>
+                <button class="btn-secondary">Join Crew</button>
+            </div>
+        </div>
+    </section>
+    <div class="pirate-marquee">
+
+        <div class="marquee-track">
+
+            <span>🏴‍☠️ Pirates of the Caribbean • Rule the Seven Seas • ⚓</span>
+            <span>💀 Treasure Awaits the Brave • X Marks the Spot • 🗺️</span>
+            <span>🌊 Sail Beyond the Horizon • Storms Fear No Pirates • 🌪️</span>
+            <span>🔥 Black Pearl Rises Again • Cannon Fire Across the Ocean • 💣</span>
+            <span>🧭 Follow the Compass • Destiny Lies in the Sea • 🪙</span>
+
+            <!-- duplicate for smooth loop -->
+            <span>🏴‍☠️ Pirates of the Caribbean • Rule the Seven Seas • ⚓</span>
+            <span>💀 Treasure Awaits the Brave • X Marks the Spot • 🗺️</span>
+
+        </div>
+
     </div>
 
+    <!-- CAPTAINS SECTION -->
+    <section class="captains-section">
+        <h2 class="section-title">Legendary Pirate Captains</h2>
+        <div class="captains-container">
+            <div class="pirate-card">
+                <img src="/app/assets/img/b1d7fc7cbd19cc399e78c8a3cf8cc0c7.jpg"
+                    alt="Blackbeard">
+                <h3>Edward Teach (Blackbeard)</h3>
+                <p>One of the most feared pirates of the Golden Age of Piracy.</p>
+            </div>
+
+            <!-- Calico Jack -->
+            <div class="pirate-card">
+                <img src="/app/assets/img/willi-van-de-winkel-ai-generated-8086967_1920.jpg"
+                    alt="Calico Jack">
+                <h3>Calico Jack Rackham</h3>
+                <p>Known for his iconic skull flag and piracy in the Caribbean.</p>
+            </div>
+
+            <!-- Anne Bonny -->
+            <div class="pirate-card">
+                <img src="/app/assets/img/luzie1973-pirate-1730143.jpg" alt="Anne Bonny">
+                <h3>Anne Bonny</h3>
+                <p>Famous female pirate known for bravery and combat skills.</p>
+            </div>
+
+            <!-- Captain Kidd -->
+            <div class="pirate-card">
+                <img src="/app/assets/img/digital-art-style-pirate-character-portrait.jpg"
+                    alt="Captain Kidd">
+                <h3>Captain William Kidd</h3>
+                <p>Privateer turned pirate, one of the most controversial figures.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHIPS SECTION -->
+    <section class="ships-section">
+        <h2 class="section-title">Legendary Ships</h2>
+        <div class="ships-container">
+            <div class="ship-box">
+                <h3>Black Pearl</h3>
+            </div>
+            <div class="ship-box">
+                <h3>Flying Dutchman</h3>
+            </div>
+            <div class="ship-box">
+                <h3>Queen Anne’s Revenge</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="quote-section">
+
+        <h2>
+            “Not all treasure is silver and gold, mate.”
+        </h2>
+
+    </section>
+    <section class="join-section">
+        <h2 class="section-title">Join The Pirate Crew</h2>
+        <form class="crew-form">
+            <input type="text" placeholder="Pirate Name">
+            <input type="email" placeholder="Email Address">
+            <button type="submit">Join Now</button>
+        </form>
+
+    </section>
     <div ng-include="'/app/components/Site/footer/footer.html'"></div>
 
 </div>

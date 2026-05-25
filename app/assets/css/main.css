@@ -1,0 +1,340 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: #0d1117;
+    color: white;
+}
+
+.page-wrapper {
+    overflow-x: hidden;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/wp2841113-pirates-hd-wallpapers.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    font-size: 80px;
+    color: #d4af37;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px black;
+    font-family: 'Great Vibes', cursive;
+}
+
+.hero-overlay p {
+    font-family: 'Garamond', cursive;
+    font-size: 22px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.hero-btns button {
+    font-family: 'Garamond', cursive;
+    padding: 15px 35px;
+    margin: 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background: #d4af37;
+    color: black;
+}
+
+.btn-primary:hover {
+    background: white;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #d4af37 !important;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #d4af37;
+    color: black;
+}
+
+/* =========================
+   CAPTAINS SECTION
+========================= */
+
+.captains-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: fantasy;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    color: #fbbf24;
+}
+
+.captains-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.pirate-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.pirate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.pirate-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.pirate-card h3 {
+    margin: 15px 0 5px;
+    color: #fbbf24;
+    font-family: 'Garamond', cursive;
+}
+
+.pirate-card p {
+    font-size: 0.95rem;
+    padding: 0 15px 20px;
+    color: #e2e8f0;
+    font-family: 'Garamond', cursive;
+}
+
+/* =========================
+   SHIPS SECTION
+========================= */
+
+.ships-section {
+    padding: 100px 50px;
+    background: #0f172a;
+}
+
+.ships-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ship-box {
+    width: 300px;
+    height: 180px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1518837695005-2083093ee35b');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.ship-box:hover {
+    transform: scale(1.05);
+}
+
+.ship-box h3 {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 10px black;
+}
+
+/* =========================
+   QUOTE SECTION
+========================= */
+
+.quote-section {
+    padding: 120px 30px;
+    text-align: center;
+    background: #111827;
+}
+
+.quote-section h2 {
+    font-size: 42px;
+    max-width: 900px;
+    margin: auto;
+    color: #d4af37;
+    line-height: 1.5;
+}
+
+/* =========================
+   JOIN SECTION
+========================= */
+
+.join-section {
+    padding: 100px 20px;
+    background: #0f172a;
+}
+
+.crew-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.crew-form input {
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #1f2937;
+    color: white;
+    font-size: 18px;
+}
+
+.crew-form button {
+    padding: 18px;
+    border: none;
+    background: #d4af37;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.crew-form button:hover {
+    background: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 768px) {
+
+    .hero-overlay h1 {
+        font-size: 50px;
+    }
+
+    .hero-overlay p {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .quote-section h2 {
+        font-size: 28px;
+    }
+
+}
+
+.pirate-marquee {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #0b1320, #000);
+    padding: 14px 0;
+    border-top: 2px solid #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    position: relative;
+}
+
+/* glowing edges effect */
+.pirate-marquee::before,
+.pirate-marquee::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 2;
+}
+
+.pirate-marquee::before {
+    left: 0;
+    background: linear-gradient(to right, #000, transparent);
+}
+
+.pirate-marquee::after {
+    right: 0;
+    background: linear-gradient(to left, #000, transparent);
+}
+
+/* track */
+.marquee-track {
+    display: flex;
+    width: max-content;
+    gap: 70px;
+    animation: scroll 18s linear infinite;
+}
+
+/* text */
+.marquee-track span {
+    color: #ffcc00;
+    font-size: 18px;
+    font-weight: 700;
+    white-space: nowrap;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
+    transition: .3s;
+}
+
+/* hover effect */
+.marquee-track span:hover {
+    color: white;
+    transform: scale(1.1);
+    text-shadow: 0 0 20px #ffcc00;
+}
+
+/* animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

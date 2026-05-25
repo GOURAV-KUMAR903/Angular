@@ -1,14 +1,12 @@
-html,body{
+/* html,body{
    height:100%;
-   /* overflow:hidden; */
-}
+   overflow:hidden;
+} */
 .login-page {
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-image: url('/app/assets/img/wp3650143-black-pearl-ship-wallpapers.jpg');
     background-size: cover;
     background-position: center;

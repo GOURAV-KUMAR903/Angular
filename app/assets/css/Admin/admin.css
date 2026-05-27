@@ -5,26 +5,26 @@ body {
     background-color: #fff;
 }
 
-.login-page {
+.new-page {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.login-card {
+.new-card {
     width: 320px;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
 }
 
-.login-logo {
+.new-logo {
     width: 170px;
     height: 70px;
 }
 
-.login-input {
+.new-input {
     width: 100vh;
     padding: 15px;
     margin: 15px 0 0 -53px;
@@ -35,7 +35,7 @@ body {
     max-width: 362px;
 }
 
-.login-btn {
+.new-btn {
     width: 80%;
     padding: 12px;
     margin-top: 15px;
@@ -48,7 +48,7 @@ body {
     transition: 0.3s;
 }
 
-.login-btn:hover {
+.new-btn:hover {
     background: #fff;
     border: 1px solid #000f1c;
     color: #000f1c;
@@ -56,24 +56,24 @@ body {
 
 @media (max-width: 768px) {
 
-    .login-card {
+    .new-card {
         max-width: 420px;
         width: 90%;
         padding: 25px;
     }
 
-    .login-logo {
+    .new-logo {
         width: 150px;
         height: auto;
     }
 
-    .login-input {
+    .new-input {
         padding: 12px;
         font-size: 15px;
         margin-left: auto;
     }
 
-    .login-btn {
+    .new-btn {
         padding: 12px;
         font-size: 15px;
     }
@@ -83,7 +83,7 @@ body {
         padding: 10px;
     }
 
-    .login-btn:active {
+    .new-btn:active {
         background: #fff;
         border: 1px solid #000f1c;
         color: #000f1c;
@@ -91,7 +91,7 @@ body {
 }
 
 @media (max-width: 380px) {
-    .login-card {
+    .new-card {
         padding: 15px;
     }
 
@@ -100,25 +100,25 @@ body {
         padding: 8px;
     }
 
-    .login-input {
+    .new-input {
         font-size: 13px;
         padding: 18px;
         width: 300px;
         margin-right: auto;
     }
 
-    .login-btn {
+    .new-btn {
         font-size: 14px;
         padding: 10px;
         width: 150px;
     }
 
-    .login-logo {
+    .new-logo {
         width: 130px;
         height: auto;
     }
 
-    .login-btn:active {
+    .new-btn:active {
         background: #fff;
         border: 1px solid #000f1c;
         color: #000f1c;

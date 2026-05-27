@@ -1,108 +1,125 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  height: 100vh;
-  background-color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #fff;
 }
 
 .login-page {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .login-card {
-  width: 320px;
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .login-logo {
-	width: 170px;
-	height: 70px;
+    width: 170px;
+    height: 70px;
 }
 
 .login-input {
-	width: 100vh;
-	padding: 15px;
-	margin: 15px 0 0 -53px;
-	border: none;
-	border-radius: 8px;
-	outline: none;
-	border: 1px solid black;
-	max-width: 362px;
+    width: 100vh;
+    padding: 15px;
+    margin: 15px 0 0 -53px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid black;
+    max-width: 362px;
 }
 
 .login-btn {
-  width: 80%;
-  padding: 12px;
-  margin-top: 15px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  background: #000f1c;
-  color: white;
-  transition: 0.3s;
+    width: 80%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #000f1c;
+    color: white;
+    transition: 0.3s;
 }
 
 .login-btn:hover {
-  background: #fff;
-  border: 1px solid #000f1c;
-  color: #000f1c;
+    background: #fff;
+    border: 1px solid #000f1c;
+    color: #000f1c;
 }
+
 @media (max-width: 768px) {
 
-  .login-card {
-    max-width: 420px;
-    width: 90%;
-    padding: 25px;
-  }
+    .login-card {
+        max-width: 420px;
+        width: 90%;
+        padding: 25px;
+    }
 
-  .login-logo {
-    width: 150px;
-    height: auto;
-  }
+    .login-logo {
+        width: 150px;
+        height: auto;
+    }
 
-  .login-input {
-    padding: 12px;
-    font-size: 15px;
-  }
+    .login-input {
+        padding: 12px;
+        font-size: 15px;
+    }
 
-  .login-btn {
-    padding: 12px;
-    font-size: 15px;
-  }
+    .login-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
 
-  .tab-btn {
-    font-size: 14px;
-    padding: 10px;
-  }
+    .tab-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-btn:hover {
+        background: #fff;
+        border: 1px solid #000f1c;
+        color: #000f1c;
+    }
 }
+
 @media (max-width: 380px) {
-  .login-card {
-    padding: 15px;
-  }
+    .login-card {
+        padding: 15px;
+    }
 
-  .tab-btn {
-    font-size: 12px;
-    padding: 8px;
-  }
+    .tab-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
 
-  .login-input {
-    font-size: 13px;
-    padding: 10px;
-  }
+    .login-input {
+        font-size: 13px;
+        padding: 18px;
+        width: 320px;
+        margin-right: -49px;
+    }
 
-  .login-btn {
-    font-size: 14px;
-    padding: 10px;
-  }
+    .login-btn {
+        font-size: 14px;
+        padding: 10px;
+        width: 150px;
+    }
 
-  .login-logo {
-    width: 130px;
-    height: auto;
-  }
+    .login-logo {
+        width: 130px;
+        height: auto;
+    }
+
+    .login-btn:hover {
+        background: #fff;
+        border: 1px solid #000f1c;
+        color: #000f1c;
+    }
 }

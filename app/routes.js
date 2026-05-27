@@ -69,6 +69,21 @@ app.config(function ($routeProvider) {
       },
     })
 
+    .when("/Alogin", {
+      templateUrl: "app/views/admin/login.html",
+      controller: "",
+      resolve: {
+        load: function ($q) {
+          var css = document.createElement("link");
+          css.rel = "stylesheet";
+          css.href = "app/assets/css/Admin/admin.css";
+          document.head.appendChild(css);
+
+          return $q.resolve();
+        },
+      },
+    })
+
     // ✅ correct 404 route
     .otherwise({
       templateUrl: "app/views/404.html",

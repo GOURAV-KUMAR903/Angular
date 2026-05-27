@@ -83,7 +83,7 @@ body {
         padding: 10px;
     }
 
-       .login-btn:active {
+    .login-btn:active {
         background: #fff;
         border: 1px solid #000f1c;
         color: #000f1c;
@@ -100,12 +100,12 @@ body {
         padding: 8px;
     }
 
- .login-input {
-	font-size: 13px;
-	padding: 18px;
-	width: 300px;
-	margin-right: auto;
-}
+    .login-input {
+        font-size: 13px;
+        padding: 18px;
+        width: 300px;
+        margin-right: auto;
+    }
 
     .login-btn {
         font-size: 14px;
@@ -118,7 +118,7 @@ body {
         height: auto;
     }
 
-      .login-btn:active {
+    .login-btn:active {
         background: #fff;
         border: 1px solid #000f1c;
         color: #000f1c;

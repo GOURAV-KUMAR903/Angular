@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #141e30, #243b55);
   height: 100vh;
+  background-color: #fff;
 }
 
 .login-page {
@@ -14,12 +14,9 @@ body {
 
 .login-card {
   width: 320px;
-  background: rgba(255, 255, 255, 0.08);
   padding: 30px;
   border-radius: 15px;
   text-align: center;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .login-logo {

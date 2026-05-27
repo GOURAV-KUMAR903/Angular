@@ -10,10 +10,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
-.login-input{
-    border: 1px solid #000;
-    
 }
 
 .login-card {
@@ -28,15 +24,18 @@ body {
   margin-bottom: 20px;
 }
 
+/* FIXED INPUT */
 .login-input {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  border: none;
+  width: 100%;              /* ❌ vh hata diya */
+  padding: 15px;
+  margin: 12px 0;
   border-radius: 8px;
   outline: none;
+  border: 1px solid black;
+  box-sizing: border-box;   /* important */
 }
 
+/* BUTTON SAME STYLE */
 .login-btn {
   width: 100%;
   padding: 12px;
@@ -52,4 +51,6 @@ body {
 
 .login-btn:hover {
   background: #fff;
+  border: 1px solid #000f1c;
+  color: #000f1c;
 }

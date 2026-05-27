@@ -100,12 +100,12 @@ body {
         padding: 8px;
     }
 
-    .login-input {
-        font-size: 13px;
-        padding: 18px;
-        width: 320px;
-        margin-right: -49px;
-    }
+ .login-input {
+	font-size: 13px;
+	padding: 18px;
+	width: 300px;
+	margin-right: auto;
+}
 
     .login-btn {
         font-size: 14px;

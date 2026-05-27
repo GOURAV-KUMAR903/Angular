@@ -72,4 +72,7 @@ app.config(function ($routeProvider) {
         },
       },
     });
+       .otherwise({
+      templateUrl: "/app/views/404.html",
+    });
 });

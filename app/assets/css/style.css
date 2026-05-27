@@ -1,26 +1,28 @@
 
 .login-page {
     min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     background-image: url('/app/assets/img/wp3650143-black-pearl-ship-wallpapers.jpg');
     background-size: cover;
     background-position: center;
 }
 
-
 .login-container {
-    width: 380px;
+    width: 450px;
+    height: 450px;
     padding: 40px 35px;
     border-radius: 18px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
     text-align: center;
-    background: #0b0b0b;
+    background: #304352;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #efeae3, #0c0c0d);
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #efeae3, #0c0c0d);
+    background: linear-gradient(to right, #10100f, #7c7f81);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
@@ -32,11 +34,11 @@
 .login-container-logo {
     width: 200px;
     height: 80px;
-  
+   
 }
 
 .logo-container h2 {
-    color: #222;
+    color: #fff;
     font-weight: 400;
 }
 
@@ -46,7 +48,7 @@
 }
 
 .input-group input {
-    width: 92%;
+    width: 100%;
     padding: 17px 14px;
     margin-bottom: 15px;
     border-radius: 12px;
@@ -74,9 +76,9 @@
     transition: 0.3s;
     background: #808080;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e9d205ef, #808080);
+    background: -webkit-linear-gradient(to right, #f7f7f7, #808080);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7f7f7, #7a7777);
+    background: linear-gradient(to right, #f7f7f7, #808080);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
@@ -119,4 +121,9 @@
     padding:35px;
     border-radius:15px;
     box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+.subtitle {
+	font-size: 13px;
+	color: #fff;
+	margin-top: 20px;
 }

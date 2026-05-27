@@ -73,6 +73,6 @@ app.config(function ($routeProvider) {
       },
     });
       .otherwise({
-      templateUrl: "/app/views/site/404.html",
+      templateUrl: "/app/views/404.html",
     });
 });

@@ -63,10 +63,15 @@ app.config(function ($routeProvider) {
       controller: "RegisterController",
       resolve: {
         load: function ($q) {
-          var css = document.createElement("link");
-          css.rel = "stylesheet";
-          css.href = "app/assets/css/register.css";
-          document.head.appendChild(css);
+          var existing = document.getElementById("register-css");
+
+          if (!existing) {
+            var css = document.createElement("link");
+            css.id = "register-css";
+            css.rel = "stylesheet";
+            css.href = "/app/assets/css/register.css?v=" + new Date().getTime(); // cache bust
+            document.head.appendChild(css);
+          }
 
           return $q.resolve();
         },

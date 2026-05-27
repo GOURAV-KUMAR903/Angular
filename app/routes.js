@@ -2,26 +2,28 @@ app.config(function ($routeProvider) {
   $routeProvider
 
     .when("/", {
-      templateUrl: "/app/views/site/index.html",
+      templateUrl: "app/views/site/index.html",
       controller: "",
       resolve: {
         load: function ($q) {
           var defer = $q.defer();
 
-          // CSS Files
           var styles = [
             "app/assets/css/site.css",
             "app/assets/css/main.css",
             "app/assets/css/footer.css",
           ];
+
           styles.forEach(function (href) {
             var css = document.createElement("link");
             css.rel = "stylesheet";
             css.href = href;
             document.head.appendChild(css);
           });
+
           var script = document.createElement("script");
           script.src = "app/assets/js/site.js";
+
           script.onload = function () {
             defer.resolve();
           };
@@ -38,20 +40,14 @@ app.config(function ($routeProvider) {
     })
 
     .when("/login", {
-      templateUrl: "/app/views/user/intro.html",
+      templateUrl: "app/views/user/intro.html",
       controller: "LoginController",
       resolve: {
-        load: function ($q, $rootScope) {
-          // CSS Load
+        load: function ($q) {
           var css = document.createElement("link");
           css.rel = "stylesheet";
           css.href = "app/assets/css/style.css";
           document.head.appendChild(css);
-
-          // JS Load
-          // var script = document.createElement("script");
-          // script.src = "app/controllers/loginController.js";
-          // document.body.appendChild(script);
 
           return $q.resolve();
         },
@@ -59,7 +55,7 @@ app.config(function ($routeProvider) {
     })
 
     .when("/register", {
-      templateUrl: "/app/views/user/register.html",
+      templateUrl: "app/views/user/register.html",
       controller: "RegisterController",
       resolve: {
         load: function ($q) {
@@ -71,10 +67,12 @@ app.config(function ($routeProvider) {
           return $q.resolve();
         },
       },
-    });
+    })
+
+    // ✅ correct 404 route
     .otherwise({
-       templateUrl: "/app/views/404.html",
-       resolve: {
+      templateUrl: "app/views/404.html",
+      resolve: {
         load: function ($q) {
           var css = document.createElement("link");
           css.rel = "stylesheet";
@@ -85,4 +83,5 @@ app.config(function ($routeProvider) {
         },
       },
     });
+
 });

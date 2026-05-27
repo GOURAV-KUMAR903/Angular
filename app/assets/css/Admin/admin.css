@@ -53,3 +53,56 @@ body {
   border: 1px solid #000f1c;
   color: #000f1c;
 }
+@media (max-width: 768px) {
+
+  .login-card {
+    max-width: 420px;
+    width: 90%;
+    padding: 25px;
+  }
+
+  .login-logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .login-input {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .login-btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .tab-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .login-card {
+    padding: 15px;
+  }
+
+  .tab-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .login-input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .login-logo {
+    width: 130px;
+    height: auto;
+  }
+}

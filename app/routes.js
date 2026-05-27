@@ -73,6 +73,16 @@ app.config(function ($routeProvider) {
       },
     });
       .otherwise({
-      templateUrl: "/app/views/404.html",
+       templateUrl: "/app/views/404.html",
+       resolve: {
+        load: function ($q) {
+          var css = document.createElement("link");
+          css.rel = "stylesheet";
+          css.href = "app/assets/css/error.css";
+          document.head.appendChild(css);
+
+          return $q.resolve();
+        },
+      },
     });
 });

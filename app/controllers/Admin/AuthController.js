@@ -7,7 +7,7 @@ app.controller("AuthController", function ($scope, apiService) {
     }
 
     const apiData = {
-      phone: $scope.credentials.username,
+      phone: $scope.credentials.phone,
       password: $scope.credentials.password,
     };
 
@@ -16,16 +16,16 @@ app.controller("AuthController", function ($scope, apiService) {
       .then(function (response) {
         if (response.data.success) {
           localStorage.setItem("token", response.data.token);
-          $scope.success = response.data.message || "Login Successful";
-          $scope.error = "";
+          $scope.success = response.data.message;
+        alert($scope.success);
         } else {
           $scope.error = response.data.message;
-          $scope.success = "";
+          alert($scope.error);
         }
       })
       .catch(function (error) {
-        $scope.error = error.data?.message || "Server error";
-        $scope.success = "";
+        $scope.error = error.data?.message;
+        alert($scope.error);
       });
   };
 });

@@ -3,21 +3,21 @@
     <img src="/app/assets/img/images-removebg-preview.png" class="new-logo" alt="Logo">
 
     <form name="mainloginForm" ng-submit="mainlogin(mainloginForm)" novalidate>
-      <input type="text"
-             class="new-input"
-             placeholder="Phone"
-             ng-model="credentials.phone"
-             required>
 
-      <input type="password"
-             class="new-input"
-             placeholder="Password"
-             ng-model="credentials.password"
-             required>
+      <input type="text" name="phone" ng-model="credentials.phone" placeholder="Phone" required>
 
-      <button class="new-btn" type="submit">
-        Login
-      </button>
+      <span class="text-danger" ng-show="mainloginForm.$submitted && mainloginForm.phone.$error.required">
+        Phone is required
+      </span>
+
+      <input type="password" name="password" ng-model="credentials.password" placeholder="Password" required>
+
+      <span class="text-danger" ng-show="mainloginForm.$submitted && mainloginForm.password.$error.required">
+        Password is required
+      </span>
+
+      <button type="submit">Login</button>
+
     </form>
   </div>
 </div>

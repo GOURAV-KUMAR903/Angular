@@ -2,9 +2,9 @@ app.controller("AuthController", function ($scope, apiService) {
 
     $scope.credentials = {};
 
-    $scope.login = function (loginForm) {
+    $scope.mainlogin = function (mainloginForm) {
 
-        if (loginForm.$invalid) {
+        if (mainloginForm.$invalid) {
             return;
         }
 

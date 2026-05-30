@@ -4,13 +4,13 @@
 
     <form name="mainloginForm" ng-submit="mainlogin(mainloginForm)" novalidate>
 
-      <input type="text" name="phone" ng-model="credentials.phone" placeholder="Phone" required>
+      <input type="text" class="form-control" name="phone" ng-model="credentials.phone" placeholder="Phone" required>
 
       <span class="text-danger" ng-show="mainloginForm.$submitted && mainloginForm.phone.$error.required">
         Phone is required
       </span>
 
-      <input type="password" name="password" ng-model="credentials.password" placeholder="Password" required>
+      <input type="password" class="form-control" name="password" ng-model="credentials.password" placeholder="Password" required>
 
       <span class="text-danger" ng-show="mainloginForm.$submitted && mainloginForm.password.$error.required">
         Password is required

@@ -71,7 +71,7 @@ app.config(function ($routeProvider) {
 
     .when("/Alogin", {
       templateUrl: "app/views/admin/login.html",
-      controller: "",
+      controller: "Admin/AuthController",
       resolve: {
         load: function ($q) {
           var css = document.createElement("link");

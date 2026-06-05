@@ -7,7 +7,7 @@ app.controller("AuthController", function ($scope, apiService) {
     }
 
     const apiData = {
-      phone: $scope.credentials.phone,
+      user_id: $scope.credentials.user_id,
       password: $scope.credentials.password,
     };
 

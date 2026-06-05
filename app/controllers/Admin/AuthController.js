@@ -17,9 +17,19 @@ app.controller("AuthController", function ($scope, apiService) {
         console.log(response.data);
         if (response.data.success) {
           localStorage.setItem("token", response.data.token);
-          alert(response.data.message);
+          alert(
+            "Success: " +
+              response.data.success +
+              "\nMessage: " +
+              response.data.message,
+          );
         } else {
-          alert(response.data.message);
+          alert(
+            ": " +
+              response.data.success +
+              "\nMessage: " +
+              response.data.message,
+          );
         }
       })
       .catch(function (error) {

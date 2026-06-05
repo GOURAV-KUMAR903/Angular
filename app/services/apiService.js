@@ -1,23 +1,25 @@
 app.service("apiService", function ($http) {
+  const BASE_URL = "https://property.mail-go.site/api";
 
-    const BASE_URL = "https://property.mail-go.site/api";
+  this.login = function (data) {
+    return $http.post(BASE_URL + "/login", data);
+  };
 
-    this.login = function (data) {
-        return $http.post(BASE_URL + "/login", data);
-    };
+  this.register = function (data) {
+    return $http.post(
+      "http://localhost/test/Admin/Management/createUser",
+      data,
+    );
+  };
 
-    this.register = function (data) {
-        return $http.post(
-            "http://localhost/test/Admin/Management/createUser",
-            data
-        );
-    };
-
-        this.Alogin = function (data) {
-        return $http.post(
-            "http://localhost/test/Admin/Management/adminLogin",
-            data
-        );
-    };
-
+  this.Alogin = function (data) {
+    return $http({
+      method: "POST",
+      url: "http://localhost/test/Admin/Management/adminLogin",
+      data: data,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  };
 });

@@ -14,28 +14,24 @@ app.controller("AuthController", function ($scope, apiService) {
     apiService
       .Alogin(apiData)
       .then(function (response) {
-        console.log(response.data);
-        if (response.data.success) {
-          localStorage.setItem("token", response.data.token);
-          alert(
-            "Success: " +
-              response.data.success +
-              "\nMessage: " +
-              response.data.message,
-          );
-        } else {
-          alert(
-            ": " +
-              response.data.success +
-              "\nMessage: " +
-              response.data.message,
-          );
+
+        let data = response.data;
+
+        // agar JSON string aayi ho to convert karo
+        if (typeof data === "string") {
+          data = JSON.parse(data);
         }
+
+        // 👉 sirf message show hoga
+        alert(data.message);
+
+        if (data.success === true) {
+          localStorage.setItem("token", data.token || "");
+        }
+
       })
       .catch(function (error) {
-        console.log(error);
-
-        alert(JSON.stringify(error.data));
+        alert(error.data?.message || "Server Error");
       });
   };
 });

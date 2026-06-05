@@ -3,14 +3,17 @@
     <img src="/app/assets/img/images-removebg-preview.png" class="new-logo" alt="Logo">
 
     <form name="mainloginForm" ng-submit="mainlogin(mainloginForm)" novalidate>
+      <div class="error" ng-if="error">{{error}}</div>
+      <div class="success" ng-if="success">{{success}}</div>
 
-      <input type="text" class="new-input" name="phone" ng-model="credentials.phone" placeholder="Phone" required>
+      <input type="text" class="new-input" name="user_id" ng-model="credentials.user_id" placeholder="User ID" required>
 
-      <span class="text-danger" ng-show="mainloginForm.$submitted && mainloginForm.phone.$error.required">
-        Phone is required
+      <span class="text-danger" ng-show="mainloginForm.$submitted && mainloginForm.user_id.$error.required">
+        User ID is required
       </span>
 
-      <input type="password" class="new-input" name="password" ng-model="credentials.password" placeholder="Password" required>
+      <input type="password" class="new-input" name="password" ng-model="credentials.password" placeholder="Password"
+        required>
 
       <span class="text-danger" ng-show="mainloginForm.$submitted && mainloginForm.password.$error.required">
         Password is required

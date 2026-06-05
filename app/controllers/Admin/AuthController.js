@@ -12,13 +12,11 @@ app.controller("AuthController", function ($scope, apiService) {
     };
 
     apiService
-      .login(apiData)
+      .Alogin(apiData)
       .then(function (response) {
         console.log(response.data);
-
         if (response.data.success) {
           localStorage.setItem("token", response.data.token);
-
           alert(response.data.message);
         } else {
           alert(response.data.message);

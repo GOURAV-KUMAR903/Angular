@@ -13,4 +13,11 @@ app.service("apiService", function ($http) {
         );
     };
 
+        this.Alogin = function (data) {
+        return $http.post(
+            "http://localhost/test/Admin/Management/adminLogin",
+            data
+        );
+    };
+
 });
